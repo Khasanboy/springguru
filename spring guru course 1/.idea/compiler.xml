@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring guru course" />
+        <module name="jpaexample" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring guru course" target="10" />
-    </bytecodeTargetLevel>
   </component>
 </project>
