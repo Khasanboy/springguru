@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+</head>
+<body>
+<h1>List of Authors</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    <tr th:each="author: ${authors}">
+        <td th:text="${author.id}">1</td>
+        <td th:text="${author.firstName}">Alan</td>
+        <td th:text="${author.lastName}">Beckham</td>
+    </tr>
+</table>
+
+</body>
+</html>
