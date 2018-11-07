@@ -11,6 +11,7 @@ public class PropertyInjectedController {
     @Autowired
     @Qualifier("greetingServiceImpl2")
     private GreetingService greetingService;
+    //or we can declare private GreetingService greetingServiceImpl2
 
     public void greet(){
         this.greetingService.greet();
