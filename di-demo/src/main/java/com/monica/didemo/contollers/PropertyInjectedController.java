@@ -13,7 +13,7 @@ public class PropertyInjectedController {
     private GreetingService greetingService;
     //or we can declare private GreetingService greetingServiceImpl2
 
-    public void greet(){
+    public void greet() {
         this.greetingService.greet();
     }
 
