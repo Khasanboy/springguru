@@ -1,6 +1,6 @@
 package com.monica.didemo.contollers;
 
-import com.services.GreetingService;
+import com.monica.didemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 

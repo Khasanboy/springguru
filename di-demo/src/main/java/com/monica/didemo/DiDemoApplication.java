@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = {"com.services", "com.monica.didemo"})
+@ComponentScan(basePackages = {"com.monica.didemo.services", "com.monica.didemo"})
 @SpringBootApplication
 public class DiDemoApplication {
 
