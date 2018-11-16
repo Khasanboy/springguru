@@ -1,4 +1,4 @@
-package com.monica.didemo.services;
+package com.services;
 
 public interface GreetingService {
     public String greet();
