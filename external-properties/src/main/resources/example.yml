@@ -1,0 +1,36 @@
+# This is comment. Yaml is used to describe datastructures.
+
+name:John
+
+names: #Comment
+  -John
+  -Paul
+  -Ringo
+
+pound_sign: "#"
+
+book:
+  author: Joe Black
+  publisher: random hause
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No false, False
+
+string_val: "This is it's quote"
+
+colon_string: "my courses: one two three"
+
+include_new_lines: |
+  asdf asdf ads
+  adf kklk
+  lkkl
+
+ignore_new_lined: >
+  this is
+  just one long
+  string
