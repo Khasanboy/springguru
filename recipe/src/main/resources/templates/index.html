@@ -8,5 +8,16 @@
 
 <h1>My Recipies fuck it !</h1>
 
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe: ${recipies}">
+        <td th:text="${recipe.getId()}">123</td>
+        <td th:text="${recipe.getDescription()}">Testy as shit</td>
+    </tr>
+</table>
+
 </body>
 </html>
