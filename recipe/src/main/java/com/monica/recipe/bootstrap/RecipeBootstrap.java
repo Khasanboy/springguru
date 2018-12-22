@@ -5,15 +5,18 @@ import com.monica.recipe.models.*;
 import com.monica.recipe.repositories.CategoryRepository;
 import com.monica.recipe.repositories.RecipeRepository;
 import com.monica.recipe.repositories.UnitOfMeasureRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Component
 public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -28,8 +31,10 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
     }
 
     @Override
+    @Transactional
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         recipeRepository.saveAll(getRecipes());
+        log.debug("Loading bootstrap data");
     }
 
 
@@ -177,7 +182,6 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "Grill the chicken, then let it rest while you warm the tortillas. Now you are ready to assemble the tacos and dig in. The whole meal comes together in about 30 minutes!");
 
         tacosRecipe.setNote(tacoNote);
-
 
 
         tacosRecipe.addIngredient(new Ingredient("ancho chili powder", new BigDecimal(2), teaSpoonUom));
