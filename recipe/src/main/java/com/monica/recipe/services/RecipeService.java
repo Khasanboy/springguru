@@ -6,6 +6,6 @@ import java.util.Set;
 
 public interface RecipeService {
 
-    Set<Recipe> getAllRecipies();
+    Set<Recipe> getAllRecipes();
 
 }
